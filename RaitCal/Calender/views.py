@@ -1,5 +1,13 @@
 from django.shortcuts import render, HttpResponse, redirect
 
-def index(request):
+def login(request):
 
-    return render(request, 'index.html')
+    return render(request, 'logintypes.html')
+
+def logintype(request):
+
+    return render(request, 'loginpage.html')
+
+def register(request):
+
+    return render(request, 'register.html')

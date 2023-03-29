@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>rait</title>
+   <!-- {% load static%} -->
+    <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<style>
+  .log-btn{
+  position: relative;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  margin-right: 50%;
+  margin-top: 80%;
+  background: #9F1C33;
+}
+
+  img{
+    width: 35%;
+    position: relative;
+    display:inline-block;
+
+  }
+
+  .container-div {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .mybtn{
+        position: relative;
+        padding: 5px 20px 10px 20px;
+        border-radius: 10px;
+        border: 1px solid #560e1b;
+        box-shadow: 1px black;
+        font-size: 1.2rem;
+        background: #9F1C33;
+        color: aliceblue
+    }
+
+    .mybtn:hover{
+      background-color: #d92848;
+      color: white;
+    }
+
+    
+    
+</style>
+
+</head>
+<body>
+  <div class="d-flex flex-row">
+
+    <div style="width: 50%;">
+      <img src = "/static/images/rait.jpeg" style="width: 100%; height: 100vh; border-top-right-radius: 50px;">
+    </div>
+    
+    <div style="width: 50%; margin: auto; text-align: center;">
+      
+      <div class = "mx-auto my-4 py-4">
+        <img src="/static/images/RAITlogo_sticker.png" alt="sticker" >
+      </div>
+
+      <div class="container d-flex flex-column" style = "position: relative; margin-top: 10%; ">
+        <input type="text" placeholder="Name" style="border: none;
+        border-bottom: 1px solid black;
+        border-bottom: 53%;
+        width: 50%;
+        margin: auto;
+        padding: -1% 25%;
+        margin-bottom: 5%;
+        outline: none;">
+        
+        <input type="text" placeholder="Roll No." style="border: none;
+        border-bottom: 1px solid black;
+        border-bottom: 53%;
+        width: 50%;
+        margin: auto;
+        padding: -1% 25%;
+        margin-bottom: 5%;
+        outline: none;">
+
+        <input type="email" placeholder="Email ID" style="border: none;
+        border-bottom: 1px solid black;
+        border-bottom: 53%;
+        width: 50%;
+        margin: auto;
+        padding: -1% 25%;
+        margin-bottom: 5%;
+        outline: none;">
+
+        <select name="Branch" id="branch" style="border: none;
+        border-bottom: 1px solid black;
+        border-bottom: 53%;
+        width: 50%;
+        margin: auto;
+        padding: -1% 25%;
+        margin-bottom: 5%;
+        outline: none;">
+            <option value="volvo">IT</option>
+            <option value="saab">EXTC</option>
+            <option value="opel">CS</option>
+            <option value="audi">Instrumental</option>
+          </select>
+
+        <input type="password" placeholder="Password" style="border: none;
+        border-bottom: 1px solid black;
+        border-bottom: 53%;
+        width: 50%;
+        margin: auto;
+        padding: -1% 25%;
+        margin-bottom: 5%;
+        outline: none;">
+
+        <input type="password" placeholder="Confirm Password" style="border: none;
+        border-bottom: 1px solid black;
+        border-bottom: 53%;
+        width: 50%;
+        margin: auto;
+        padding: -1% 25%;
+        margin-bottom: 5%;
+        outline: none;">
+      </div>
+      <button type="button" class="btn btn-light mybtn" style = "position: relative; margin-top: 0; ">Login</button>
+      
+    </div>
+  </div>
+</body>
+</html>
