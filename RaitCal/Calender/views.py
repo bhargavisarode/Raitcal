@@ -11,3 +11,11 @@ def logintype(request):
 def register(request):
 
     return render(request, 'register.html')
+
+def student_dashboard(request):
+
+    return render(request, 'student_dashboard.html')
+
+def index(request):
+
+    return render(request, 'index.html')
